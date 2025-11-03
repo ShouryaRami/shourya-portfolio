@@ -1,108 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Shourya Rami Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/webp" href="./images/favicon.webp" />
+  <title>Shourya Kashyap Rami | Software Engineer</title>
+  <meta name="description"
+    content="Enthusiastic and detail-oriented Software Engineering graduate student at UMBC with hands-on experience in full-stack web development. Strong foundation in React.js, Node.js, JavaScript, and Java with a passion for building scalable and user-friendly applications.">
+  <meta name="keywords"
+    content="Shourya Kashyap Rami, Software Engineer, React.js, Node.js, JavaScript, Java, MongoDB, MySQL, HTML, CSS, C, C++, Git, MERN Stack" />
 
-        body {
-            background-color: #121212;
-            color: #00ff00;
-            font-family: 'Fira Code', monospace;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .typing {
-            display: inline-block;
-            font-size: 2em;
-            max-width: 90%;
-            overflow: hidden;
-            word-wrap: break-word;
-            white-space: pre-wrap;
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 2px;
-            height: 1em;
-            background-color: #00ff00;
-            margin-left: 2px;
-            animation: blink 0.8s steps(2, start) infinite;
-            vertical-align: bottom;
-        }
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        .description {
-            margin-top: 20px;
-            font-size: 1.2em;
-            color: #00ff00;
-            max-width: 90%;
-        }
-
-        @media (max-width: 768px) {
-            .typing {
-                font-size: 1.5em;
-            }
-
-            .description {
-                font-size: 1em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .typing {
-                font-size: 1.2em;
-            }
-
-            .description {
-                font-size: 0.95em;
-            }
-        }
-    </style>
+  <link rel="preload" href="index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="index.css">
+  </noscript>
 </head>
+
 <body>
+  <!-- ***** Header ***** -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__items" id="navItems">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
 
-    <div class="typing">
-        <span id="typed-text-content"></span><span class="cursor"></span>
+        </ul>
+      </nav>
     </div>
-
-    <div class="description">
-        Hello! I'm Shourya Rami, a passionate front-end developer. <br>
-        Currently learning and building amazing projects in web development. 
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary"><span>Shourya Kashyap Rami</span></h1>
+        <p>Software Engineering Graduate Student at UMBC</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <a href="https://www.linkedin.com/in/shouryarami/" target="_blank" class="btn btn--blue">LinkedIn</a>
+      </div>
     </div>
+  </header>
 
-    <script>
-        const text = "Hello Everyone, Shourya here. The portfolio is under development. An amazing page is waiting for you. Stay updated";
-        const textSpan = document.getElementById("typed-text-content");
-        let index = 0;
+  <main role="main">
+    <div class="content_container">
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Work</h2>
+          <div class="work__boxes">
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Learning Management System (LMS)</h3>
+                <p>Platform for institutes to manage courses, track attendance, and allow students to access study
+                  content.</p>
+                <ul class="work__list">
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                </ul>
+                <div class="work__links">
+                  <a href="#" target="_blank" class="link__text">Visit Site
+                    <span>&rarr;</span></a>
+                  <a href="https://github.com/ShouryaRami" title="View Source Code" target="_blank">
+                    <img src="./images/github.svg" class="work__code" alt="GitHub repository link">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/project-1.webp" class="work__image" alt="Project 1 screenshot" loading="lazy"
+                  width="372" height="178" />
+              </div>
+            </div>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Expense Tracker</h3>
+                <p>Web application that monitors daily expenses and generates visual charts for monthly analysis.</p>
+                <ul class="work__list">
+                  <li>React.js</li>
+                  <li>JavaScript</li>
+                  <li>HTML/CSS</li>
+                </ul>
+                <div class="work__links">
+                  <a href="#" target="_blank" class="link__text">Visit Site
+                    <span>&rarr;</span></a>
+                  <a href="https://github.com/ShouryaRami" title="View Source Code" target="_blank">
+                    <img src="./images/github.svg" class="work__code" alt="GitHub repository link">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/project-2.webp" class="work__image" alt="Project 2 screenshot" loading="lazy"
+                  width="372" height="178" />
+              </div>
+            </div>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>ClubHouse Clone (Audio Chat Room)</h3>
+                <p>Real-time communication platform supporting voice and video calls.</p>
+                <ul class="work__list">
+                  <li>Node.js</li>
+                  <li>WebRTC</li>
+                  <li>Socket.io</li>
+                </ul>
+                <div class="work__links">
+                  <a href="#" target="_blank" class="link__text">Visit Site
+                    <span>&rarr;</span></a>
+                  <a href="https://github.com/ShouryaRami" title="View Source Code" target="_blank">
+                    <img src="./images/github.svg" class="work__code" alt="GitHub repository link">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/project-3.webp" class="work__image" alt="Project 3 screenshot" loading="lazy"
+                  width="372" height="178" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        function type() {
-            if (index < text.length) {
-                textSpan.textContent += text.charAt(index);
-                index++;
-                setTimeout(type, 85);
-            }
-        }
+      <section class="certifications" id="certifications">
+        <div class="row">
+          <h2>Certifications</h2>
+          <div class="certifications__list">
+            <ul>
+              <li>MERN Stack Development — TechNishal</li>
+              <li>Java Certified Professional (JAVA SE Programmer) — RST Forum</li>
+              <li>Front-End Development Certification — NPTEL</li>
+              <li>C Programming Course — NPTEL</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        type();
-    </script>
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__photo-container">
+              <img class="about__photo" src="./images/rami.webp"
+                alt="Shourya Kashyap Rami, Software Engineer" loading="lazy" height="178" />
+            </div>
+            <div class="about__text">
+              <p>Enthusiastic and detail-oriented Software Engineering graduate student at UMBC with hands-on experience in full-stack web development. Strong foundation in React.js, Node.js, JavaScript, and Java with a passion for building scalable and user-friendly applications. Proven experience as a Graduate Assistant, Front-End Developer, and Tutor. Excellent at mentoring students, solving problems, and collaborating in team-driven environments to deliver high-quality software solutions.</p>
+              <a href="./assets/Shourya_Rami_Resume.pdf" target="_blank"
+                class="btn">My Resume</a>
+            </div>
+          </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="content_container">
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team.
+            Feel free to reach out — I'd love to connect and help in any way I can. 😊 The quickest way to get in touch
+            with me is through email.</p>
+          <a href="mailto:AD39491@umbc.edu" class="btn">Mail Me 📧</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/ShouryaRami" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="GitHub profile">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/shouryarami/">
+            <img src="./images/linkedin.svg" title="Link to LinkedIn Profile" class="footer__social-image"
+              alt="LinkedIn profile">
+          </a>
+        </li>
+      </ul>
+      <p style="font-size: x-small; padding: 0 50px 0 50px;">&copy; 2025 Shourya Rami. <a href="https://github.com/ShouryaRami" class="link" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Arrow pointing up to scroll to top" class="back-to-top__image" />
+  </a>
+  <script src="./index.js" defer></script>
 </body>
+
 </html>
